@@ -1,6 +1,6 @@
 # AlphaFour
 
-Connect Four AI combining a minimax engine with alpha-beta pruning and a feedforward neural network trained on minimax-generated game data.
+Connect Four AI using a feedforward neural network trained on generated minimax game data. Tested against minimax bot with alpha-beta pruning.
 
 Built for Prof. Mark Hopkins' Foundations of AI class at Williams College. 
 
@@ -37,7 +37,7 @@ python play.py
 This runs tournaments between minimax agents and saves board states + optimal moves to `data.json`.
 If `memo.json` exists in the directory, it will be loaded automatically to cache minimax results across runs.
 
-Optionally generate data from an existing memo file:
+If it already exists, optionally generate data from an existing memo file:
 
 ```bash
 python use_memo.py
